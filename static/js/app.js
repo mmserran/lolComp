@@ -18,6 +18,30 @@ var LolCompCtrl = function ($scope, $modal) {
       controller: StandardInstanceCtrl,
     });
   };
+  $scope.lolcomp1Stats = [  
+    { name: 'AD', value: .9, type: 'danger', win: 1 },
+    { name: 'AP', value: .1, type: 'danger', win: 0 },
+    { name: 'CC', value: .2, type: 'primary', win: 0 },
+    { name: 'break', value: 0, type: 'none', win: 0  },
+    { name: 'Sustain', value: .2, type: 'success', win: 1 },
+    { name: 'Mobility', value: .2, type: 'warning', win: 0 },
+    { name: 'break', value: 0, type: 'none', win: 0  },
+    { name: 'Pushing', value: .4, type: 'info', win: 0 },
+    { name: 'Zoning', value: 0, type: 'info', win: 0 },
+    { name: 'Utility', value: .2, type: 'primary', win: 1 },
+  ];
+  $scope.lolcomp1Aspects = [  
+    { name: 'Duel', value: .6, type: 'danger', win: 1  },
+    { name: 'Skirmish', value: .8, type: 'warning', win: 0  },
+    { name: 'Teamfight', value: .9, type: 'success', win: 0  },
+    { name: 'break', value: 0, type: 'none', win: 0  },
+    { name: 'Early', value: .6, type: 'danger', win: 1  },
+    { name: 'Mid', value: .2, type: 'warning', win: 0  },
+    { name: 'Late', value: .9, type: 'primary', win: 1  },
+    { name: 'break', value: 0, type: 'none', win: 0  },
+    { name: 'Poke', value: .1, type: 'success', win: 0  },
+    { name: 'Burst', value: .8, type: 'danger', win: 0  },
+  ];
 };
 
 

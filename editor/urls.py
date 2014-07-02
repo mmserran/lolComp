@@ -5,7 +5,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls import patterns, include, url
 
-from compselector import views
+from editor import views
 urlpatterns = patterns('',
-    url(r'^$', views.index),
-) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    url(r'^$', views.champSelect),
+)

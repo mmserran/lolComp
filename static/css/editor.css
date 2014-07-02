@@ -1,0 +1,37 @@
+
+@font-face {
+  font-family: cabin;
+  src: url('../fonts/Cabin-Medium.otf') format('opentype');
+}
+
+.bar {
+	height: 12px;
+}
+
+.left {
+	margin-top: 3px;
+	font-family: cabin;
+	font-size: 12px;
+	text-align: center;
+}
+
+.right {
+	margin-top: 3px;
+	font-family: cabin;
+	font-size: 12px;
+	text-align: center;
+}
+.stats .row *, .aspects .row * {
+	margin-bottom: 0px;
+}
+
+.panel-footer .btn {
+	height: 18px;
+	font-size: 12px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+body {
+	background-color: gray;
+}

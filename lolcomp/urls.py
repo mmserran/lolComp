@@ -8,6 +8,7 @@ urlpatterns = patterns('',
     # url(r'^$', 'lolcomp.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
+    url(r'admin/', include('editor.urls')),
     url(r'', include('compselector.urls')),
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin2/', include(admin.site.urls)),
 )
