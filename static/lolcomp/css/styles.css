@@ -1,0 +1,76 @@
+
+@font-face {
+  font-family: cabin;
+  src: url('../fonts/Cabin-Medium.otf') format('opentype');
+}
+
+.bar {
+  height: 12px;
+}
+
+.statHeader {
+  margin-top: 3px;
+  font-family: cabin;
+  font-size: 12px;
+  text-align: center;
+  text-shadow: 1px 1px rgba(0,0,0,.2);
+}
+
+.stats .row *, .aspects .row * {
+  margin-bottom: -2px;
+}
+
+.panel-footer .btn, .teamPanel .btn {
+  height: 18px;
+  font-size: 12px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.teamPanel {
+  border-radius: 5px;
+  margin: 3%;
+}
+
+body {
+  background: #222222;
+}
+
+.teamPanel .purp {
+  background: #8E0CE8;
+}
+
+.teamPanel .blue {
+  background: #0078FE;
+}
+
+.heading .statHeader {
+  font-size: 30px;
+}
+
+.teamPanel .heading {
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  border-radius: 6px 6px 0 0;
+  color: black;
+  padding: 10px 20px;
+}
+
+.teamPanel .body {
+  -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,1);
+          box-shadow: inset 0 0 10px rgba(0,0,0,1);
+  padding: 10px 20px;
+  background-color: #DDDDDD;
+  color: black;
+}
+
+.teamPanel .footer {
+  padding: 10px 20px;
+  border: 1px solid #DDDDDD;
+  background-color: #F5F5F5;
+
+}
+
+.stats *, .aspects * {
+    border-radius: 0px 0px 0 0;
+}

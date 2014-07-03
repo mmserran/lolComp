@@ -2,22 +2,22 @@
 
 {% block content %} <!-- This block content is placed inside of base.html body -->
 <div class="container" ng-app="LolCompApp" ng-controller="LolCompCtrl">
-  <link href="{{ STATIC_URL }}css/styles.css" rel="stylesheet">
+  <link href="{{ STATIC_URL }}lolcomp/css/styles.css" rel="stylesheet">
  
   <!-- Navbar -->
-  <div ng-include="'{{ STATIC_URL }}partials/navbar.html'"></div>
+  <div ng-include="'{{ STATIC_URL }}lolcomp/partials/navbar.html'"></div>
 
   <!-- Layer 1 -->
   <div class="row">
     <!-- leftside team stats (6) -->
-    <div class="col-xs-6">
-      <div class="panel panel-info">
+    <div class="col-xs-12 col-sm-6">
+      <div class="teamPanel">
         <!-- Row 1: CC chain combo layer -->
-        <div class="panel-heading">
-          <h4>CC Chain Combo</h4>
+        <div class="row heading blue">
+          <h4 class="statHeader">Combo</h4>
         </div>
-        <div class="panel-body">
-          <!-- Row 2: lolComp team stats layer -->
+        <!-- Row 2: lolComp team stats layer -->
+        <div class="row body">
           <div class="stats col-xs-6">
             {% verbatim %}
             <div class="row" ng-repeat="stat in lolcomp1Stats">
@@ -25,8 +25,8 @@
                 <br />
               </div>
               <div ng-if="stat.name!='break'">
-                <div class="col-lg-3 col-md-4 col-sm-5 col-xs-6"><h5 class="statHeader">{{ stat.name }}</h5></div>
-                <div class="col-lg-9 col-md-8 col-sm-7 col-xs-6"><progressbar ng-class="(stat.win==1) ? 'progress-striped active' : ''" class="bar" type={{stat.type}} max="1" value="stat.value"></progressbar></div>
+                <div class="col-lg-3 col-md-4 col-sm-5 col-xs-3"><h5 class="statHeader">{{ stat.name }}</h5></div>
+                <div class="col-lg-9 col-md-8 col-sm-7 col-xs-8"><progressbar ng-class="(stat.win==1) ? 'progress-striped active' : ''" class="bar" type={{stat.type}} max="1" value="stat.value"></progressbar></div>
               </div>
             </div>
             {% endverbatim %}
@@ -39,32 +39,32 @@
                 <br />
               </div>
               <div ng-if="stat.name!='break'">
-                <div class="col-lg-3 col-md-4 col-sm-5 col-xs-6"><h5 class="statHeader">{{ stat.name }}</h5></div>
-                <div class="col-md-9 col-md-8 col-sm-7 col-xs-6"><progressbar ng-class="(stat.win==1) ? 'progress-striped active' : ''" class="bar" type={{stat.type}} max="1" value="stat.value"></progressbar></div>
+                <div class="col-lg-3 col-md-4 col-sm-5 col-xs-3"><h5 class="statHeader">{{ stat.name }}</h5></div>
+                <div class="col-md-9 col-md-8 col-sm-7 col-xs-8"><progressbar ng-class="(stat.win==1) ? 'progress-striped active' : ''" class="bar" type={{stat.type}} max="1" value="stat.value"></progressbar></div>
               </div>
             </div>
             {% endverbatim %}
           </div>
         </div>
-        <!-- Row 2: lolComp team kit tags layer -->
-        <div class="panel-footer">
+        <!-- Row 3: lolComp team kit tags layer -->
+        <div class="row footer">
 
-          <span class="btn btn-warning statHeader">Gap Closer</span> - 
-          <span class="btn btn-primary statHeader">Stealth</span><em class="statHeader"> x5</em>
+          <span class="btn btn-warning statHeader">Gap Closer</span>
+          <span class="btn btn-primary statHeader">Stealth</span><em class="statHeader"> x5</em> 
 
         </div>
       </div>
     </div>
 
     <!-- rightside team stats (6) -->
-    <div class="col-xs-6">
-      <div class="panel panel-info">
+    <div class="col-sm-6 hidden-xs">
+      <div class="teamPanel">
         <!-- Row 1: CC chain combo layer -->
-        <div class="panel-heading">
-          <h4>CC Chain Combo</h4>
+        <div class="row heading purp">
+          <h4 class="statHeader">Combo</h4>
         </div>
-        <div class="panel-body">
-          <!-- Row 2: lolComp team stats layer -->
+        <!-- Row 2: lolComp team stats layer -->
+        <div class="row body">
           <div class="stats col-xs-6">
             {% verbatim %}
             <div class="row" ng-repeat="stat in lolcomp1Stats">
@@ -93,9 +93,11 @@
             {% endverbatim %}
           </div>
         </div>
-        <!-- Row 2: lolComp team kit tags layer -->
-        <div class="panel-footer">
+        <!-- Row 3: lolComp team kit tags layer -->
+        <div class="row footer">
 
+          <span class="btn btn-warning statHeader">Gap Closer</span>
+          <span class="btn btn-primary statHeader">Stealth</span><em class="statHeader"> x5</em> 
           <span class="btn btn-warning statHeader">Gap Closer</span>
           <span class="btn btn-primary statHeader">Stealth</span><em class="statHeader"> x5</em> 
 
@@ -108,6 +110,7 @@
   <!-- Layer 2 -->
   <div class="row">
     <!-- Col 1: left champ list -->
+    <div class="col-xs"
       <!-- for each champ on the leftside team -->
         <!-- Row 1: Champ unique stat layer -->
           <!-- Col A: Profile pic -->

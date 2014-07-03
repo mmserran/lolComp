@@ -148,6 +148,8 @@ class Profile(models.Model):
 	# JSON list of honors, in alphabetical order
 	honors = models.TextField(max_length=200)
 	#Private
+	left_color = models.CharField(max_length=32)
+	right_color = models.CharField(max_length=32)
 	email  = models.EmailField()
 	# list champ ratings
 	# list lolComp ratings

@@ -9,6 +9,15 @@
 // The ques_editor app will allow users to add/del/mod questions
 //  for a chosen page.
 var LolCompApp = angular.module('LolCompApp', ['ui.bootstrap'])
+.directive('cars', function () {
+  return {
+    restrict: 'E',
+    scope: { 'cars': '=data' },
+    template: "<div ng-repeat='car in cars'>\n" +
+    "  {{car.year}} {{car.make}} {{car.model}}\n" +
+    "</div>"
+  };
+});
 
 var LolCompCtrl = function ($scope, $modal) {
   // Select modals

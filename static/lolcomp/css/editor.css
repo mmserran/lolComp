@@ -25,13 +25,26 @@
 	margin-bottom: 0px;
 }
 
-.panel-footer .btn {
+.panel-footer .btn, .team .panel .footer .btn {
 	height: 18px;
 	font-size: 12px;
 	margin-top: 0px;
 	padding-top: 0px;
 }
 
-body {
-	background-color: gray;
+.teamPanel {
+	margin: 3%;
+}
+
+.teamPanel .heading {
+	background: blue;
+	margin: 100px;
+}
+
+.teamPanel .body {
+
+}
+
+.teamPanel .footer {
+
 }
