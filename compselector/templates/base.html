@@ -12,8 +12,16 @@
     <title>League of Legends Team Composition Tool - LolComp</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ STATIC_URL }}lolcomp/css/lib/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//mgcrea.github.io/angular-strap/styles/angular-motion.min.css">
+    
+    <script src="//code.angularjs.org/1.2.16/angular.min.js" data-semver="1.2.16"></script>
+    <script src="//code.angularjs.org/1.2.16/angular-animate.min.js" data-semver="1.2.16"></script>
+    <script src="//code.angularjs.org/1.2.16/angular-sanitize.min.js" data-semver="1.2.16"></script>
+    <script src="//mgcrea.github.io/angular-strap/dist/angular-strap.js" data-semver="v2.0.3"></script>
+    <script src="//mgcrea.github.io/angular-strap/dist/angular-strap.tpl.js" data-semver="v2.0.3"></script>
     <!-- glyphicons - font awesome CDN -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -34,10 +42,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     {% block javascript %}
-    <script src="{{ STATIC_URL }}lolcomp/js/lib/angular.min.js"></script>
-    <script src="{{ STATIC_URL }}lolcomp/js/lib/angular-cookies.min.js"></script>
     <script src="{{ STATIC_URL }}lolcomp/js/lib/ui-bootstrap-tpls-0.11.0.min.js"></script>
-    <script src="{{ STATIC_URL }}lolcomp/js/lib/bootstrap.min.js"></script>
     <script src="{{ STATIC_URL }}lolcomp/js/app.js"></script>
     {% endblock javascript %}
   </body>

@@ -1,0 +1,24 @@
+
+<div class="stats col-xs-6">
+  <div class="row" ng-repeat="stat in lolcomp1Stats">
+    <div ng-if="stat.name=='break'">
+      <br />
+    </div>
+    <div ng-if="stat.name!='break'">
+      <div class="col-lg-3 col-md-4 col-sm-5 col-xs-3"><h5 class="statHeader">{{ stat.name }}</h5></div>
+      <div class="col-lg-9 col-md-8 col-sm-7 col-xs-8"><progressbar ng-class="(stat.win==1) ? 'progress-striped active' : ''" class="bar" type={{stat.type}} max="1" value="stat.value"></progressbar></div>
+    </div>
+  </div>
+  <br />
+</div>
+<div class="aspects col-xs-6">
+  <div class="row" ng-repeat="stat in lolcomp1Aspects">
+    <div ng-if="stat.name=='break'">
+      <br />
+    </div>
+    <div ng-if="stat.name!='break'">
+      <div class="col-lg-3 col-md-4 col-sm-5 col-xs-3"><h5 class="statHeader">{{ stat.name }}</h5></div>
+      <div class="col-md-9 col-md-8 col-sm-7 col-xs-8"><progressbar ng-class="(stat.win==1) ? 'progress-striped active' : ''" class="bar" type={{stat.type}} max="1" value="stat.value"></progressbar></div>
+    </div>
+  </div>
+</div>

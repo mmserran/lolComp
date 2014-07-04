@@ -48,13 +48,14 @@ class TagType(models.Model):
 	#		airborne, blind, entangle, root, forced_action, polymorph, silence, slow
 	#		stun, suppression, flee, knock_up, knock_down, knock_aside, taunt, fear
 	#	Sustain - green
-	#		heal, cost_sustain, buff_tank, shield
+	#		heal, cost_sustain, buff_tank, shield_self, shield_ally
 	#	Mobility - yellow
-	#		dash, buff_mov, gap_closer, jump, thin_walls, thick_walls
+	#		dash, buff_mov, gap_closer, jump, thin_walls, thick_walls, cc_immune_self,
+	#		cc_immune_ally, to_ally, escape
 	#	Utility - blue
 	#		aura, vision, trap, interrupt, disengage, main_init, follow_up_init, dunk,
 	#		resets, stealth, global, DoT, aa_reset, hook, applies_on_hit, zoning, AoE,
-	#		can_hit_structure, remove_debuff
+	#		can_hit_structure, remove_debuff, untargetable
 	#	Target Type
 	#		auto_target, targeted, skillshot
 

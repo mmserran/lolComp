@@ -8,7 +8,7 @@
 
 // The ques_editor app will allow users to add/del/mod questions
 //  for a chosen page.
-var LolCompApp = angular.module('LolCompApp', ['ui.bootstrap'])
+var LolCompApp = angular.module('LolCompApp', ['ui.bootstrap', 'ngAnimate', 'ngSanitize', 'mgcrea.ngStrap'])
 .directive('cars', function () {
   return {
     restrict: 'E',
@@ -19,8 +19,22 @@ var LolCompApp = angular.module('LolCompApp', ['ui.bootstrap'])
   };
 });
 
+
 var LolCompCtrl = function ($scope, $modal) {
+
   // Select modals
+  $scope.modal = {
+    "title": "Title",
+    "content": "Hello Modal<br />This is a multiline message!"
+  };
+  $scope.tooltip = {
+    "title": "Hello Tooltip<br />This is a multiline message!",
+    "checked": false
+  };
+  $scope.popover = {
+    "title": "Title",
+    "content": "Hello Popover<br />This is a multiline message!"
+  };
   $scope.youtubeModal = function() {
     var modalInstance = $modal.open({
       templateUrl: 'youtubeModal.html',

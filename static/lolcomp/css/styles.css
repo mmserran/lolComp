@@ -29,7 +29,7 @@
 
 .teamPanel {
   border-radius: 5px;
-  margin: 3%;
+  margin: 2%;
 }
 
 body {
@@ -71,6 +71,70 @@ body {
 
 }
 
+.modal {
+  overflow: hidden;
+}
+
 .stats *, .aspects * {
     border-radius: 0px 0px 0 0;
+}
+
+.right input[type='text']{
+text-align:right;
+}
+
+.right input[type='text']:focus{
+text-align:right;
+}
+
+.both {
+    position: relative;
+    padding: 0;
+}
+.both span{
+    position: absolute;
+    top: 10px;
+}
+.right .glyphicon-remove-circle {
+    right: auto;
+    left: 6px;
+}
+.left .glyphicon-remove-circle {
+    left: auto;
+    right: 6px;
+}
+
+.searchLayer {
+  margin: 0 0;
+  border-radius: 2px;
+}
+
+.searchLayer .left {
+  padding-left: 0;
+}
+
+.searchLayer .right {
+  padding-right: 0;
+}
+
+.searchLayer .form-group {
+  margin-bottom: 0;
+}
+
+.list-group .list-group-item {
+  padding: 0;
+  border: 0;
+  margin: 4 -2px -2px -2px;
+}
+
+.results * {
+  margin: 0 -1px;
+  background: black;
+}
+
+.vs {
+  margin: 0 0;
+  color: white;
+  font-family: cabin;
+  text-shadow: 1px 1px rgba(26,26,26,1);
 }
