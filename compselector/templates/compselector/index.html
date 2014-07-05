@@ -5,12 +5,111 @@
   <link href="{{ STATIC_URL }}lolcomp/css/styles.css" rel="stylesheet">
  
   <!-- Layer 1: Hero, Logo-Title, Login -->
+  <nav class="navbar navbar-static-top" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Brand</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 
   <!-- Layer 2: Champ Select Navbar -->
-  <div class="row panel">
-    <div class="col-xs-12">
-      <div data-spy="affix" data-offset-top="60" data-offset-bottom="200">
-      </div>
+  <div class="champNavbar row panel" bs-affix>
+    <div class="col-xs-6">
+      <ul class="list-group list-inline pull-left">
+        <li>
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </li>
+        <li class="list-group-item">
+          <img src="{{ MEDIA_URL }}images/champs/Chogath/Chogath.png" height="36px"></img>
+        </li>
+        <li class="list-group-item">
+          <img src="{{ MEDIA_URL }}images/champs/Wukong/Wukong.png" height="36px"></img>
+        </li>
+        <li class="list-group-item">
+          <img src="{{ MEDIA_URL }}images/champs/Yasuo/Yasuo.png" height="36px"></img>
+        </li>
+        <li class="list-group-item">
+          <img src="{{ MEDIA_URL }}images/champs/Zyra/Zyra.png" height="36px"></img>
+        </li>
+        <li class="list-group-item">
+          <img src="{{ MEDIA_URL }}images/champs/Tristana/Tristana.png" height="36px"></img>
+        </li>
+        <li>
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </li>
+      </ul>
+    </div>
+    <div class="col-xs-6">
+      <ul class="list-group list-inline pull-right">
+        <li>
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </li>
+        <li class="list-group-item">
+          <img src="{{ MEDIA_URL }}images/champs/Chogath/Chogath.png" height="36px"></img>
+        </li>
+        <li class="list-group-item">
+          <img src="{{ MEDIA_URL }}images/champs/Wukong/Wukong.png" height="36px"></img>
+        </li>
+        <li class="list-group-item">
+          <img src="{{ MEDIA_URL }}images/champs/Yasuo/Yasuo.png" height="36px"></img>
+        </li>
+        <li class="list-group-item">
+          <img src="{{ MEDIA_URL }}images/champs/Zyra/Zyra.png" height="36px"></img>
+        </li>
+        <li class="list-group-item">
+          <img src="{{ MEDIA_URL }}images/champs/Tristana/Tristana.png" height="36px"></img>
+        </li>
+        <li>
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </li>
+      </ul>
     </div>
   </div>
 

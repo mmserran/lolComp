@@ -4,6 +4,17 @@
   src: url('../fonts/Cabin-Medium.otf') format('opentype');
 }
 
+body {
+  background: #222222; /* Old browsers */ progid:DXImageTransform.Microsoft.gradient( startColorstr='#00428b', endColorstr='#4c048f',GradientType=1 ); /* IE6-9 */
+
+}
+
+.modal {
+  overflow: hidden;
+}
+
+
+
 .bar {
   height: 12px;
 }
@@ -30,10 +41,6 @@
 .teamPanel {
   border-radius: 5px;
   margin: 2%;
-}
-
-body {
-  background: #222222;
 }
 
 .teamPanel .purp {
@@ -71,22 +78,23 @@ body {
 
 }
 
-.modal {
-  overflow: hidden;
-}
-
 .stats *, .aspects * {
     border-radius: 0px 0px 0 0;
 }
 
 .right input[type='text']{
-text-align:right;
+  text-align:right;
 }
 
 .right input[type='text']:focus{
-text-align:right;
+  text-align:right;
 }
 
+/**
+ * Search Champ Layer
+ */
+
+ 
 .both {
     position: relative;
     padding: 0;
@@ -121,12 +129,6 @@ text-align:right;
   margin-bottom: 0;
 }
 
-.list-group .list-group-item {
-  padding: 0;
-  border: 0;
-  margin: 4 -2px -2px -2px;
-}
-
 .results * {
   margin: 0 -1px;
   background: black;
@@ -137,4 +139,24 @@ text-align:right;
   color: white;
   font-family: cabin;
   text-shadow: 1px 1px rgba(26,26,26,1);
+}
+
+/**
+ * Champ Select Navbar Layer
+ */
+
+.champNavbar {
+  z-index: 200;
+  background: black;
+  padding: 10px;
+}
+
+.list-group {
+  margin: 0px;
+}
+
+.list-group .list-group-item {
+  padding: 0;
+  border: 0;
+  margin: 4 -2px -2px -2px;
 }
